@@ -14,7 +14,7 @@ function Homepage() {
   }, []);
 
   return (
-    <div className="homepage-container"> {/* Ajoutez ce conteneur englobant */}
+    <div className="homepage-container"> {}
       <h1>Page d'accueil</h1>
       <div className="movies-grid">
         {movies.map((movie) => (
