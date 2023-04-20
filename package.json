@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "projet-netflix",
-=======
-  "name": "projetnetflix",
->>>>>>> 369fb983e86c0fdb549d98dde289f17d3c7a31ae
   "version": "0.1.0",
   "private": true,
   "dependencies": {
