@@ -1,5 +1,6 @@
 import React from "react";
 import './Header.css';
+
 function Header() {
     return (
       <div className="header">
@@ -17,7 +18,7 @@ function Header() {
           </ul>
         </div>
         <div className="profile">
-          <img src="https://www.example.com/profile.jpg" alt="Profil" />
+          <img src="src/Images/CB_image.jpeg" alt="Profil" />
         </div>
       </div>
     );
