@@ -21,6 +21,7 @@ function Header() {
         <div className="profile">
         <div className="search-box">
          <input type="text" placeholder="Recherche..." /> 
+         <button></button>
         </div>
       </div>
       </div>
