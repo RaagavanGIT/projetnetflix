@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import './MoviePage.css'
 
 function MoviePage(props) {
   const { id } = useParams();
@@ -22,13 +23,38 @@ function MoviePage(props) {
 
   return (
     <div>
+
       <Link to="/">Retour à la page d'accueil</Link>
-      <h1>{movie.title}</h1>
-      <p>{movie.overview}</p>
-      <img
-        src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-        alt={movie.title}
-      />
+      <div className="movie-title">
+        <h1>{movie.title}</h1>
+      </div>
+      <div>
+          <img
+          src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+          alt={movie.title}
+          />
+      </div>
+      <div className="movie-genre">
+        <p>{movie.genres.map((genre) => genre.name).join(", ")}</p>
+      </div>
+      <div className="launcher">
+        <button className="play">Play</button>
+        <button className="add">+</button>
+        <button className="like">OK</button>
+      </div>
+
+      <div className="movie-date">
+          <p>{movie.release_date}</p>
+      </div>
+
+      <div className="movie-vote">
+          <p>{movie.vote_average}</p>
+      </div>
+
+      <div className="movie-overview">
+          <p>{movie.overview}</p>
+      </div>
+
     </div>
   );
 }
