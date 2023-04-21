@@ -20,8 +20,8 @@ function Header() {
         </div>
         <div className="profile">
         <div className="search-box">
-         <input type="text" placeholder="Recherche..." /> 
-         <button></button>
+         <input type="text" placeholder="Recherche..."className="search-input" /> 
+         <button className="search-button">Search</button>
         </div>
       </div>
       </div>

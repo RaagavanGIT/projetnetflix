@@ -5,7 +5,7 @@
     padding: 10px 20px;
     background-color: #141414;
     color: white;
-    padding: 0;
+    padding: 10;
     margin: 0;
   }
 
@@ -22,18 +22,24 @@
 .play{
   color: black;
   background-color: white;
-  position: absolute;
-  bottom: 40%;
-  left: 10%;
+  left: 3%;
+  margin-right: 10px; 
 }
 
 .add_playlist {
-  color: black;
-  background-color: white;
-  position: absolute;
-  bottom: 40%;
-  left: 25%;
+  color: white;
+  background-color: #555555;
+  left: 13%;
 }
+.play, .add_playlist{
+  position: absolute;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+  bottom: 50%;
+  font-size: 25px;
+}
+
   
   .logo img {
     height: 50px;
@@ -65,5 +71,24 @@
   position: relative;
   display: inline-block;
   padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.search-input{
+  padding: 10px;
+}
+
+.search-button {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: auto;
+  padding: auto;
+}

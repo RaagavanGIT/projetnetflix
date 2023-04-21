@@ -15,7 +15,16 @@ function Homepage() {
 
   return (
     <div className="homepage-container"> {}
-      <h1>Page d'accueil</h1>
+      <div className="homepage-banner_movie">
+        {movies.length > 0 && (
+            <img
+              src={`https://image.tmdb.org/t/p/original${movies[0].backdrop_path}`}
+              alt={movies[0].title}
+            />
+        )}
+            <button className='play'>Visionner</button>
+            <button className='add_playlist'>Ajouter à ma liste</button>
+      </div>
       <div className="movies-grid">
         {movies.map((movie) => (
           <div key={movie.id} className="movie">
