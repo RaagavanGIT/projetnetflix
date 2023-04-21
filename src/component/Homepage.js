@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Homepage.css';
+import { Link } from 'react-router-dom';
 
 function Homepage() {
   const [movies, setMovies] = useState([]);
@@ -7,7 +8,7 @@ function Homepage() {
 
   useEffect(() => {
     const apiKey = '9e1d34262c59d085124aa1ee3b7065cb';
-    const apiUrl = 'https://api.themoviedb.org/3/movie/popular?api_key=' + apiKey + '&language=fr-FR';
+    const apiUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=fr-FR`;
 
     fetch(apiUrl)
       .then((response) => response.json())
@@ -39,12 +40,10 @@ function Homepage() {
       <div className="movies-grid">
         {movies.map((movie) => (
           <div key={movie.id} className="movie">
-            <a href="#" target="_blank">
-              <img
-                src={'https://image.tmdb.org/t/p/w500' + movie.poster_path}
-                alt={movie.title}
-              />
-            </a>
+            <Link to={`/movie/${movie.id}`}><img
+              src={'https://image.tmdb.org/t/p/w500' + movie.poster_path}
+              alt={movie.title}
+            /></Link>
             <h2>{movie.title}</h2>
             <p>{movie.overview}</p>
           </div>
