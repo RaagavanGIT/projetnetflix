@@ -1,6 +1,6 @@
 import React from 'react';
-import Homepage from '/Users/raagavan/projetnetflix-1/src/Components /Homepage.js';
-import Header from '/Users/raagavan/projetnetflix-1/src/Components /Header.js';
+import Homepage from './component/Homepage';
+import {Header} from './component/Header';
 import {Routes, Route } from 'react-router-dom';
 
 

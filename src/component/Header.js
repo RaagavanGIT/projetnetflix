@@ -2,7 +2,7 @@ import React from "react";
 import './Header.css';
 
 
-function Header() {
+export function Header() {
     return (
       <div className="header">
         <div className="logo">
@@ -28,4 +28,3 @@ function Header() {
     );
   }
 
-  export default Header;
