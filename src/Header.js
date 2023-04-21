@@ -1,5 +1,7 @@
 import React from "react";
 import './Header.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 function Header() {
     return (
@@ -18,6 +20,10 @@ function Header() {
           </ul>
         </div>
         <div className="profile">
+        <div className="search-box">
+         <input type="text" placeholder="Recherche..." />
+         <FontAwesomeIcon icon={faSearch} className="search-icon" />
+        </div>
           <img src="src/Images/CB_image.jpeg" alt="Profil" />
         </div>
       </div>

@@ -34,6 +34,27 @@
   .tabs li a:hover {
     color: #e50914;
   }
+
+.search-box {
+  position: relative;
+  display: inline-block;
+}
+
+.search-box input[type="text"] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.search-box:hover input[type="text"] {
+  opacity: 1;
+  width: 200px;
+  padding: 10px;
+}
   
   .profile img {
     height: 50px;
