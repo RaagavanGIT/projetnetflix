@@ -19,10 +19,10 @@ function Homepage() {
       <div className="movies-grid">
         {movies.map((movie) => (
           <div key={movie.id} className="movie">
-            <img
+            <a href="#" target="_blank"><img
               src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
               alt={movie.title}
-            />
+            /> </a>
             <h2>{movie.title}</h2>
             <p>{movie.overview}</p>
           </div>
