@@ -1,7 +1,7 @@
 import React from "react";
-import Homepage from "/Users/maximetheophilos/projetnetflix/src/Components /Homepage.js";
-import Header from "/Users/maximetheophilos/projetnetflix/src/Components /Header.js";
-import MoviePage from "/Users/maximetheophilos/projetnetflix/src/Components /MoviePage.js";
+import Homepage from "./component/Homepage";
+import {Header} from "./component/Header";
+import MoviePage from "./component/MoviePage";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
