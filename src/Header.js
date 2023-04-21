@@ -22,9 +22,7 @@ function Header() {
         <div className="profile">
         <div className="search-box">
          <input type="text" placeholder="Recherche..." />
-         <FontAwesomeIcon icon={faSearch} className="search-icon" />
         </div>
-          <img src="src/Images/CB_image.jpeg" alt="Profil" />
         </div>
       </div>
     );
