@@ -5,7 +5,7 @@ function Homepage() {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    const apiKey = '9e1d34262c59d085124aa1ee3b7065cb';
+    const apiKey = "9e1d34262c59d085124aa1ee3b7065cb";
     const apiUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=fr-FR`;
 
     fetch(apiUrl)
@@ -14,7 +14,9 @@ function Homepage() {
   }, []);
 
   return (
-    <div className="homepage-container"> {}
+    <div className="homepage-container">
+      {" "}
+      {}
       <h1>Page d'accueil</h1>
       <div className="movies-grid">
         {movies.map((movie) => (
