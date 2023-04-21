@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Homepage.css';
+import { Link } from 'react-router-dom';
 
 function Homepage() {
   const [movies, setMovies] = useState([]);
@@ -14,15 +15,17 @@ function Homepage() {
   }, []);
 
   return (
-    <div className="homepage-container"> {}
+    <div className="homepage-container">
       <h1>Page d'accueil</h1>
       <div className="movies-grid">
         {movies.map((movie) => (
           <div key={movie.id} className="movie">
-            <img
-              src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-              alt={movie.title}
-            />
+            <Link to={`/movies/${movie.id}`}>
+              <img
+                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                alt={movie.title}
+              />
+            </Link>
             <h2>{movie.title}</h2>
             <p>{movie.overview}</p>
           </div>
