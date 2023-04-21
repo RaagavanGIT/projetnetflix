@@ -1,7 +1,7 @@
 import React from 'react';
-import Homepage from './Homepage';
-import Header from './Components/Header.js';
-import { BrowserRouter, Route } from 'react-router-dom';
+import Homepage from '/Users/raagavan/Desktop/projetnetflix/src/Components /Homepage.js';
+import Header from '/Users/raagavan/Desktop/projetnetflix/src/Components /Header.js'; 
+// import { BrowserRouter, Route } from 'react-router-dom';
 
 
 function App() {
