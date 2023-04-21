@@ -34,11 +34,10 @@
   .tabs li a:hover {
     color: #e50914;
   }
-  
-  .profile img {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-left: 10px;
-  }
+
+.search-box {
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
+}
+
