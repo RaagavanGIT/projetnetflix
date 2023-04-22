@@ -26,6 +26,33 @@ img{
     align-items: center;
 }
 
+.lecture{
+    background-color: white;
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.add, .like {
+    background-color: transparent;
+    border-radius: 50%;
+    color: white;
+    border: white solid 1px;
+    width: auto;
+    height: auto;
+}
+
+.movie-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.movie-genre{
+
+}
+
 .movie-date {
 
 

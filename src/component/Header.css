@@ -19,29 +19,6 @@
   height: 100%;
 }
 
-.play{
-color: black;
-background-color: white;
-left: 3%;
-margin-right: 10px; 
-}
-
-.add_playlist {
-color: white;
-background-color: #555555;
-left: 13%;
-}
-
-.play, .add_playlist{
-position: absolute;
-cursor: pointer;
-padding: 15px;
-border-radius: 5px;
-bottom: 50%;
-font-size: 25px;
-}
-
-
 .logo img {
   height: 50px;
   width: auto;

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './MoviePage.css'
 
 function MoviePage(props) {
@@ -23,8 +24,9 @@ function MoviePage(props) {
 
   return (
     <div>
-
+      <div className="back">
       <Link to="/">Retour à la page d'accueil</Link>
+      </div>
       <div className="movie-title">
         <h1>{movie.title}</h1>
       </div>
@@ -34,21 +36,25 @@ function MoviePage(props) {
           alt={movie.title}
           />
       </div>
-      <div className="movie-genre">
-        <p>{movie.genres.map((genre) => genre.name).join(", ")}</p>
-      </div>
       <div className="launcher">
-        <button className="play">Play</button>
-        <button className="add">+</button>
-        <button className="like">OK</button>
+        <button className="lecture">Lecture</button>
+        <button className="add"><i class="fa-solid fa-plus"></i></button>
+        <button className="like"><FontAwesomeIcon icon="fa-solid fa-thumbs-up" /></button>
       </div>
 
+    <div className="movie-info">
+      
       <div className="movie-date">
           <p>{movie.release_date}</p>
       </div>
 
       <div className="movie-vote">
-          <p>{movie.vote_average}</p>
+          <p>{movie.vote_average}<i class="fa-solid fa-thumbs-up"></i></p>
+      </div>
+    </div>
+
+    <div className="movie-genre">
+        <p> Genre :{movie.genres.map((genre) => genre.name).join(", ")}</p>
       </div>
 
       <div className="movie-overview">
