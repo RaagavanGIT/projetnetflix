@@ -1,33 +1,45 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
+import { useNavigate } from "react-router";
 
 export function Header() {
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
   const handleSearchInput = (event) => {
     const value = event.target.value;
     setSearchQuery(value);
+  };
 
-    if (value === "") {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (searchQuery === "") {
+      return;
+    }
+    navigate(`/search-results/${searchQuery}`);
+  };
+
+  useEffect(() => {
+    if (searchQuery === "") {
       setSearchResults([]);
       return;
     }
-
-    setTimeout(() => {
-      fetch(
-        `https://api.themoviedb.org/3/search/movie?api_key=9e1d34262c59d085124aa1ee3b7065cb&query=${searchQuery}`
-      )
-        .then((response) => response.json())
-        .then((data) => {
-          if (data.results && data.results.length > 0) {
-            setSearchResults(data.results.slice(0, 10));
-          } else {
-            setSearchResults([]);
-          }
-        });
-    }, 500);
-  };
+    setIsLoading(true);
+    fetch(
+      `https://api.themoviedb.org/3/search/movie?api_key=9e1d34262c59d085124aa1ee3b7065cb&query=${searchQuery}`
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.results && data.results.length > 0) {
+          setSearchResults(data.results.slice(0, 10));
+        } else {
+          setSearchResults([]);
+        }
+        setIsLoading(false);
+      });
+  }, [searchQuery]);
 
   return (
     <div className="header">
@@ -61,7 +73,7 @@ export function Header() {
       </div>
       <div className="profile">
         <div className="search-box">
-          <form>
+          <form onSubmit={handleSubmit}>
             <input
               type="text"
               placeholder="Recherche..."
@@ -75,7 +87,9 @@ export function Header() {
           </form>
         </div>
         <div className="search-results">
-          {searchResults.length > 0 ? (
+          {isLoading ? (
+            <p>Chargement des résultats de recherche...</p>
+          ) : searchResults.length > 0 ? (
             <ul>
               {searchResults.map((result) => (
                 <li key={result.id}>{result.title}</li>
