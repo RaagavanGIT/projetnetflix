@@ -38,17 +38,22 @@ function MoviePage(props) {
       </div>
       <div className="launcher">
         <button className="lecture">Lecture</button>
+        <button className="ba">Bande annonce</button>
         <button className="add"><i class="fa-solid fa-plus"></i></button>
         <button className="like"><FontAwesomeIcon icon="fa-solid fa-thumbs-up" /></button>
       </div>
 
     <div className="movie-info">
+
+      <p>Plus d'informations sur le film :</p>
       
       <div className="movie-date">
+        <h3>Date de sortie :</h3>
           <p>{movie.release_date}</p>
       </div>
 
       <div className="movie-vote">
+      <h3> Note moyenne :</h3>
           <p>{movie.vote_average}<i class="fa-solid fa-thumbs-up"></i></p>
       </div>
     </div>
