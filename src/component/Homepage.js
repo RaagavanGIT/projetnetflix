@@ -26,7 +26,6 @@ function Homepage() {
 
   return (
     <div className="homepage-container">
-      <div><p>{movies.title}</p></div>
       <div className="homepage-banner_movie">
         {randomMovie && (
           <img
