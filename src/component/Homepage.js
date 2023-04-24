@@ -8,7 +8,7 @@ function Homepage() {
 
   useEffect(() => {
     const apiKey = '9e1d34262c59d085124aa1ee3b7065cb';
-    const apiUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=fr-FR`;
+    const apiUrl = https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=fr-FR;
 
     fetch(apiUrl)
       .then((response) => response.json())
@@ -26,7 +26,6 @@ function Homepage() {
 
   return (
     <div className="homepage-container">
-      <div><p>{movies.title}</p></div>
       <div className="homepage-banner_movie">
         {randomMovie && (
           <img
@@ -34,14 +33,18 @@ function Homepage() {
             alt={randomMovie.title}
           />
         )}
+        <div className='button-container'>
         <button className='play'>Visionner</button>
         <button className='add_playlist'>Ajouter à ma liste</button>
-        <button onClick={handleRefresh}>Rafraîchir</button>
+        </div>
+      </div>
+      <div className='categories-name'>
+        <h1>Films les plus récents :</h1>
       </div>
       <div className="movies-grid">
         {movies.map((movie) => (
           <div key={movie.id} className="movie">
-            <Link to={`/movie/${movie.id}`}><img
+            <Link to={/movie/${movie.id}}><img
               src={'https://image.tmdb.org/t/p/w500' + movie.poster_path}
               alt={movie.title}
             /></Link>
