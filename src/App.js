@@ -3,6 +3,7 @@ import Homepage from "./component/Homepage";
 import {Header} from "./component/Header";
 import MoviePage from "./component/MoviePage";
 import { Routes, Route } from "react-router-dom";
+import Navbar from "./component/Navbar";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
             </>
           }
         />
-        <Route path="/movie/:id" element={<MoviePage />} />
+        <Route path="/movie/:id" element={<Navbar />} />
       </Routes>
     </div>
   );
