@@ -8,7 +8,7 @@ function Homepage() {
 
   useEffect(() => {
     const apiKey = '9e1d34262c59d085124aa1ee3b7065cb';
-    const apiUrl = https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=fr-FR;
+    const apiUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=fr-FR`;
 
     fetch(apiUrl)
       .then((response) => response.json())
@@ -42,9 +42,9 @@ function Homepage() {
         <h1>Films les plus récents :</h1>
       </div>
       <div className="movies-grid">
-        {movies.map((movie) => (
+        {movies && movies.length > 0 && movies.map((movie) => (
           <div key={movie.id} className="movie">
-            <Link to={/movie/${movie.id}}><img
+            <Link to={`/movie/${movie.id}`}><img
               src={'https://image.tmdb.org/t/p/w500' + movie.poster_path}
               alt={movie.title}
             /></Link>
@@ -56,5 +56,6 @@ function Homepage() {
     </div>
   );
 }
+
 
 export default Homepage;

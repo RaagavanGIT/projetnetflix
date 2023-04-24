@@ -9,16 +9,14 @@ export function Header() {
     const value = event.target.value;
     setSearchQuery(value);
 
-    // Ne déclenche pas de requête si l'utilisateur supprime tout le texte
     if (value === "") {
       setSearchResults([]);
       return;
     }
 
-    // Déclenche la recherche après un délai de 500ms d'inactivité de l'utilisateur
     setTimeout(() => {
       fetch(
-        https://api.themoviedb.org/3/search/movie?api_key=9e1d34262c59d085124aa1ee3b7065cb&query=${searchQuery}
+        `https://api.themoviedb.org/3/search/movie?api_key=9e1d34262c59d085124aa1ee3b7065cb&query=${searchQuery}`
       )
         .then((response) => response.json())
         .then((data) => {
@@ -86,7 +84,7 @@ export function Header() {
           ) : (
             <p>
               {searchQuery &&
-                Aucun film ne correspond à votre recherche "${searchQuery}".}
+                `Aucun film ne correspond à votre recherche "${searchQuery}".`}
             </p>
           )}
         </div>
