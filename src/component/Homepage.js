@@ -45,7 +45,7 @@ function Homepage() {
         <h1>Films les plus récents :</h1>
       </div>
       <div className="movies-grid">
-        {movies.map((movie) => (
+        {movies && movies.length > 0 && movies.map((movie) => (
           <div key={movie.id} className="movie">
             <Link to={`/movie/${movie.id}`}><img
               src={'https://image.tmdb.org/t/p/w500' + movie.poster_path}
@@ -59,5 +59,6 @@ function Homepage() {
     </div>
   );
 }
+
 
 export default Homepage;
