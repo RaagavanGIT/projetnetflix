@@ -7,6 +7,90 @@
   position: relative;
 }
 
+.homepage-banner_movie img {
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+  padding: 0;
+  margin: 0;
+}
+
+.movie-info{
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: white;
+  max-width: 40%;
+  background-color: transparent;
+}
+
+.movie-info p {
+  height: 100px;
+  overflow: hidden;
+}
+
+.movie-info h1 {
+  background-color: transparent;
+}
+
+.movie-info p {
+  background-color: transparent;
+}
+
+.button-container {
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  bottom: 0;
+  left: 5%;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.play {
+  color: black;
+  background-color: white;
+  margin-right: 4%;
+}
+
+.add_playlist {
+  color: white;
+  background-color: #555555;
+  opacity: 80%;
+}
+
+.play, .add_playlist {
+  cursor: pointer;
+  font-size: 25px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .play, .add_playlist {
+    width: 150px;
+    font-size: 10px;
+    margin-right: 2%;
+  }
+}
+
+@media (max-width: 576px) {
+  .play, .add_playlist {
+    width: 80px;
+    font-size: 5px;
+    margin-right: 2%;
+  }
+}
+
+.categories-name h1 {
+  margin-left: 2rem;
+  }
+
 .movies-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -78,55 +162,11 @@ button:hover {
   background-color: #f40612;
 }
 
-.button-container {
-  position: absolute;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  height: auto;
-  bottom: 30%;
-  left: 5%;
-  background-color: transparent;
-  font-size: 20px;
-}
-
-.play {
-  color: black;
-  background-color: white;
-  margin-right: 4%;
-}
-
-.add_playlist {
-  color: white;
-  background-color: #555555;
-  opacity: 80%;
-}
-
-.play, .add_playlist {
-  cursor: pointer;
-  font-size: 25px;
-  width: 250px;
-  border-radius: 5px;
-}
-
-@media (max-width: 768px) {
-  .play, .add_playlist {
-    width: 150px;
-    font-size: 10px;
-    margin-right: 2%;
-  }
-}
-
-@media (max-width: 576px) {
-  .play, .add_playlist {
-    width: 80px;
-    font-size: 5px;
-    margin-right: 2%;
-  }
-}
-
-
-
-.categories-name h1 {
-  margin-left: 1rem;
+  .movie_info_homepage h2 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
   }
