@@ -38,8 +38,6 @@ function MoviePage(props) {
           alt={movie.title}
           />
       </div>
-
-
       
       <div className="launcher">
         <button className="lecture">Lecture</button>
