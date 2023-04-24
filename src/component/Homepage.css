@@ -88,7 +88,7 @@ button:hover {
   justify-content: center;
   height: auto;
   bottom: 30%;
-  left: 3%;
+  left: 5%;
   background-color: transparent;
   font-size: 20px;
 }
@@ -96,16 +96,19 @@ button:hover {
 .play {
   color: black;
   background-color: white;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 25px;
-  margin-right: 2%;
+  margin-right: 4%;
 }
 
 .add_playlist {
   color: white;
   background-color: #555555;
+  opacity: 80%;
+}
+
+.play, .add_playlist {
   cursor: pointer;
+  font-size: 25px;
+  width: 250px;
   border-radius: 5px;
 }
 
