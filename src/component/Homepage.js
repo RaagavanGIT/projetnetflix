@@ -33,9 +33,13 @@ function Homepage() {
             alt={randomMovie.title}
           />
         )}
+        <div className='button-container'>
         <button className='play'>Visionner</button>
         <button className='add_playlist'>Ajouter à ma liste</button>
-        <button onClick={handleRefresh}>Rafraîchir</button>
+        </div>
+      </div>
+      <div className='categories-name'>
+        <h1>Films les plus récents :</h1>
       </div>
       <div className="movies-grid">
         {movies.map((movie) => (
