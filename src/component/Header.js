@@ -21,7 +21,7 @@ export function Header() {
         <div className="profile">
         <div className="search-box">
          <input type="text" placeholder="Recherche..."className="search-input" /> 
-         <button className="search-button">Search</button>
+         <button className="search-button">Valider</button>
         </div>
       </div>
       </div>

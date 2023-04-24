@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 import './MoviePage.css'
 
 function MoviePage(props) {
@@ -36,30 +38,31 @@ function MoviePage(props) {
           alt={movie.title}
           />
       </div>
+
+
+      
       <div className="launcher">
         <button className="lecture">Lecture</button>
         <button className="ba">Bande annonce</button>
-        <button className="add"><i class="fa-solid fa-plus"></i></button>
-        <button className="like"><FontAwesomeIcon icon="fa-solid fa-thumbs-up" /></button>
+        <button className="add"><FontAwesomeIcon icon={faPlus} /></button>
+        <button className="like"><FontAwesomeIcon icon={faThumbsUp} /></button>
       </div>
 
     <div className="movie-info">
 
-      <p>Plus d'informations sur le film :</p>
-      
-      <div className="movie-date">
-        <h3>Date de sortie :</h3>
-          <p>{movie.release_date}</p>
-      </div>
+      <h3>Plus d'informations sur le film :</h3>
 
-      <div className="movie-vote">
-      <h3> Note moyenne :</h3>
-          <p>{movie.vote_average}<i class="fa-solid fa-thumbs-up"></i></p>
+      <div className="movie-date">
+          <p>Date de sortie : {movie.release_date}</p>
+          <p>Durée : {movie.runtime} minutes</p>
+          <p>Note moyenne des spectateurs : {movie.vote_average} <FontAwesomeIcon icon={faThumbsUp} /></p>
+          <p>Nombre de vues: {movie.popularity}<i class="fa-solid fa-thumbs-up"></i></p>
       </div>
     </div>
 
-    <div className="movie-genre">
-        <p> Genre :{movie.genres.map((genre) => genre.name).join(", ")}</p>
+      <div className="movie-genre">
+        <h3>Genre : </h3>
+        <p> {movie.genres.map((genre) => genre.name).join(", ")}</p>
       </div>
 
       <div className="movie-overview">

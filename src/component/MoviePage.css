@@ -34,6 +34,7 @@ img{
     color: black;
     border-radius: 5px;
     font-size: 25px;
+    margin-right: 1rem;
 }
 
 .ba{
@@ -42,6 +43,7 @@ img{
     color: white;
     border-radius: 5px;
     font-size: 25px;
+    margin-right: 1rem;
 }
 
 .add, .like {
@@ -51,45 +53,42 @@ img{
     border: white solid 1px;
     width: auto;
     height: auto;
+    margin-right: 1rem;
+
 }
 
 .movie-info{
-    display: flex;
+    display: block;
     justify-content: space-around;
     align-items: center;
 }
 
-.movie-genre{
-
+.movie-info h3, .movie-genre h3 {
+    font-size: 20px;
+    margin-left: 1rem;
 }
 
-.movie-info p:hover .movie-vote, .movie-date {
-    display: block;
+.movie-genre p{
+    display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
 }
 
 .movie-date {
 display: flex;
-flex-direction: column;
+flex-direction: row;
+justify-content: space-around;
 align-items: center;
 }
 
-.movie-vote {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .movie-overview {
-    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.movie-overview {
-
-}
-
-.back{
-
+.back {
+  margin-left: 1rem;
+  margin-top: 1rem;
 }
