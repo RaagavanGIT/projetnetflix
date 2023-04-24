@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './Homepage.css';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+
 
 function Homepage() {
   const [movies, setMovies] = useState([]);
@@ -35,7 +38,7 @@ function Homepage() {
         )}
         <div className='button-container'>
         <button className='play'>Visionner</button>
-        <button className='add_playlist'>Ajouter à ma liste</button>
+        <button className='add_playlist'><FontAwesomeIcon icon={faInfoCircle} style={{ background: 'transparent' }}/>Plus d'infos</button>
         </div>
       </div>
       <div className='categories-name'>

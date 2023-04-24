@@ -3,6 +3,13 @@
   color: #ffffff;
 }
 
+.homepage-banner_movie {
+  position: relative;
+}
+
+.homepage-banner_movie{
+}
+
 .movies-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -74,24 +81,55 @@ button:hover {
   background-color: #f40612;
 }
 
-.play{
+.button-container {
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  height: auto;
+  bottom: 30%;
+  left: 5%;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.play {
   color: black;
   background-color: white;
-  left: 3%;
-  margin-right: 1rem; 
-  }
-  
-  .add_playlist {
+  margin-right: 4%;
+}
+
+.add_playlist {
   color: white;
   background-color: #555555;
-  left: 13%;
-  }
-  
-  .play, .add_playlist{
-  position: absolute;
+  opacity: 80%;
+}
+
+.play, .add_playlist {
   cursor: pointer;
-  padding: 15px;
-  border-radius: 5px;
-  bottom: 50%;
   font-size: 25px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .play, .add_playlist {
+    width: 150px;
+    font-size: 10px;
+    margin-right: 2%;
+  }
+}
+
+@media (max-width: 576px) {
+  .play, .add_playlist {
+    width: 80px;
+    font-size: 5px;
+    margin-right: 2%;
+  }
+}
+
+
+
+.categories-name h1 {
+  margin-left: 1rem;
   }
