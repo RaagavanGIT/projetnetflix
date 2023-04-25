@@ -46,7 +46,7 @@ function Homepage() {
     )}
     <div className='button-container'>
       <button className='play'>Visionner</button>
-      <button className='add_playlist'><FontAwesomeIcon icon={faInfoCircle} style={{ background: 'transparent' }}/>Plus d'infos</button>
+      <button className='add_playlist'><FontAwesomeIcon icon={faInfoCircle} style={{ background: 'transparent' }}/> Plus d'infos</button>
     </div>
   </div>
 </div>
