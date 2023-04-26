@@ -5,6 +5,7 @@
 
 .homepage-banner_movie {
   position: relative;
+  display: flex;
 }
 
 .homepage-banner_movie img {
@@ -15,39 +16,43 @@
   margin: 0;
 }
 
+.movie_title_homepage {
+  background-color: transparent;
+}
+
 .movie-info{
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 5%;
-  transform: translateY(-50%);
+  right: 5%;
   z-index: 1;
   color: white;
-  max-width: 40%;
   background-color: transparent;
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
 }
 
 .movie-info p {
   height: 90px;
   margin-bottom: 30px;
   overflow: hidden;
+  background-color: transparent;
 }
 
 .movie-info h1 {
   background-color: transparent;
 }
 
-.movie-info p {
-  background-color: transparent;
-}
 
 .button-container {
   display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  height: 0;
+  height: 70%;
   bottom: 0;
-  left: 5%;
   z-index: 1;
   background-color: transparent;
 }
@@ -55,7 +60,6 @@
 .play {
   color: black;
   background-color: white;
-  margin-right: 4%;
 }
 
 .add_playlist {
@@ -69,6 +73,7 @@
   font-size: 25px;
   width: 250px;
   border-radius: 5px;
+  padding: 10px;
 }
 
 @media (max-width: 1460px) {
@@ -107,7 +112,7 @@
 .categories-name h1 {
   margin-left: 2rem;
   font-size: 1.5rem;
-  padding: 0;
+  padding: 50px;
   }
 
 .movies-grid {

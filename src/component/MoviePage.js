@@ -47,9 +47,6 @@ function MoviePage(props) {
       </div>
 
     <div className="movie-info_moviepage">
-
-      <h3>Plus d'informations sur le film :</h3>
-
       <div className="movie-date">
           <p>Date de sortie : {movie.release_date}</p>
           <p>Durée : {movie.runtime} minutes</p>
@@ -59,7 +56,7 @@ function MoviePage(props) {
     </div>
 
       <div className="movie-genre">
-        <h3>Genre : </h3>
+        <h3>Genre :   </h3>
         <p> {movie.genres.map((genre) => genre.name).join(", ")}</p>
       </div>
 
