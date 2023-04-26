@@ -4,6 +4,9 @@ import {Header} from "./component/Header";
 import MoviePage from "./component/MoviePage";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./component/Navbar";
+import Mario from "./component/image/mario.jpg";
+
+
 
 function App() {
   return (
@@ -13,12 +16,13 @@ function App() {
           path="/"
           element={
             <>
-              <Header />
+              <Navbar />
               <Homepage />
             </>
           }
         />
-        <Route path="/movie/:id" element={<Navbar />} />
+        <Route path="/movie/:id" element={<Navbar/> } > </Route>   
+
       </Routes>
     </div>
   );
