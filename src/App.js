@@ -20,7 +20,7 @@ function App() {
             </>
           }
         />
-        <Route path="/movie/:id" element={<Navbar/> } > </Route>   
+        <Route path="/movie/:id" element={<MoviePage/> } > </Route>   
 
       </Routes>
     </div>
