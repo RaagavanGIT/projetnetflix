@@ -1,6 +1,5 @@
 import React from "react";
 import Homepage from "./component/Homepage";
-import {Header} from "./component/Header";
 import MoviePage from "./component/MoviePage";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./component/Navbar";
