@@ -1,0 +1,121 @@
+.movie-page {
+    color: white;
+    background-color: #000000;
+}
+
+img{
+    object-fit: contain;
+    padding: 20px;
+}
+
+.movie-title h1 {
+    color: white;
+    background-color: #141414;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1000px) {
+    .movie-title h1 {
+    font-size: 28px;
+    padding: 8px;
+    }
+    }
+
+.launcher{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.lecture{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-size: 25px;
+    margin-right: 1rem;
+}
+
+.ba{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 25px;
+    margin-right: 1rem;
+}
+
+.add, .like {
+    background-color: transparent;
+    border-radius: 50%;
+    color: white;
+    border: white solid 1px;
+    width: auto;
+    height: auto;
+    margin-right: 1rem;
+}
+
+@media (max-width: 1460px) {
+    .lecture, .ba {
+      font-size: 16px;
+      margin-right: 2%;
+    }
+  }
+
+.movie-info_moviepage{
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.movie-genre {
+    display: flex;
+    padding: 10px;
+}
+
+.movie-genre h3 {
+    font-size: 20px;
+    margin-left: 1rem;
+}
+
+.movie-genre p {
+    margin-left: 5px;
+}
+
+.movie-date {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+margin: 0 1.5rem;
+}
+
+.movie-overview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    padding: 10px;
+  }
+
+.back {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .launcher, .movie-date, .movie-genre {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+    }
