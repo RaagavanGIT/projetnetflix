@@ -79,3 +79,8 @@
 .search-form {
   background-color: white;
 }
+
+.search-form input {
+  color: black;
+}
+
