@@ -5,6 +5,7 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 import './MoviePage.css'
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 function MoviePage(props) {
   const { id } = useParams();
@@ -67,6 +68,7 @@ function MoviePage(props) {
           <p>{movie.overview}</p>
       </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 }
