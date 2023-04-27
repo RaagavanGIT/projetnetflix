@@ -1,40 +1,42 @@
-.Connexion-page {
+.connexion-page {
     background-color: black;
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
-.connexion {
+.connexion_title {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh
+    padding-top: 10%;
 }
 
-.connexion h1 {
+.connexion_title h1 {
     color: white;
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: bold;
+    font-weight: normal;
 }
 
 .connexion_box {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 .connexion_profil {
     display: flex;
     flex-direction: column;
     margin: 40px;
-
 }
 
 .connexion_profil img {
     width: 150px;
     height: 150px;
-    border-radius: 5px;
-    padding: 20px;
+    border-radius: 25px;
 }
 
 .connexion_profil h2{
@@ -48,7 +50,6 @@
     position: fixed;
     bottom:10%;
     left: 45%;
-    background-color: red;
 }
 
 .connexion_gestion button {
