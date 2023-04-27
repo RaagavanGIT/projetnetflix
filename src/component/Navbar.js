@@ -15,7 +15,7 @@ const Navbar = () => {
     return () => (window.onscroll = null);
   }
   return (
-    <div className={isScrolled ? "navbar scrolled" : "navbar"}>
+    <div className= "navbar">
       <div className="navbar_container">
         <div className="navbar_left">
           <img src={Logo} alt="logo" />
