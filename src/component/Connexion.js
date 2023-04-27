@@ -16,7 +16,7 @@ function Connexion() {
                     <h2>Cyrille</h2>
                 </div>
                 </Link>
-                <Link to ="/Homepage.js">
+                <Link to ="/Homepage">
                 < div className="profil">
                     <img src='src/component/Brontis-Guilloux.jpeg'alt="Brontis Guilloux"></img>
                     <h2>ErwinTheCat</h2>

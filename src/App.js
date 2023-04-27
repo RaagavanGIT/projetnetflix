@@ -4,15 +4,12 @@ import Homepage from "./component/Homepage";
 import MoviePage from "./component/MoviePage";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./component/Navbar";
-import Mario from "./component/image/mario.jpg";
-
-
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route
+        <Route path="/Homepage" element={<Connexion/>} /> <Route
           path="/"
           element={
             <>
@@ -21,8 +18,9 @@ function App() {
             </>
           }
         />
-        <Route path="/movie/:id" element={<MoviePage/> } > </Route>   
-
+        <Route path="/movie/:id" element={<MoviePage />}>
+          {" "}
+        </Route>
       </Routes>
     </div>
   );
@@ -30,4 +28,4 @@ function App() {
 
 export default App;
 
-// 
+//
