@@ -1,6 +1,8 @@
 import react from 'react';
 import { Link } from 'react-router-dom';
 import './Connexion.css';
+import Avatar from "./image/avatar.png";
+import Avatar2 from "./image/avatar2.png";
 
 
 function Connexion() {
@@ -12,13 +14,13 @@ function Connexion() {
             <div className="box">
                 <Link to ="/Homepage">
                 < div className="profil">
-                    <img src='src/component/cyrille-banovski.jpeg'alt="Cyrille Banovski"></img>
+                <img src={Avatar} />
                     <h2>Cyrille</h2>
                 </div>
                 </Link>
                 <Link to ="/Homepage">
                 < div className="profil">
-                    <img src='src/component/Brontis-Guilloux.jpeg'alt="Brontis Guilloux"></img>
+                <img src={Avatar2} />
                     <h2>ErwinTheCat</h2>
                 </div>
                 </Link>
