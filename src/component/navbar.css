@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   z-index: 999;
-  background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0,3) 50%);
+  background-color: transparent;  
 }
 
 .scrolled{
@@ -17,26 +17,34 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  height: auto;
 }
 
 .container .left{
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .container .left img{
-  height: 25px;
-  margin-right: 40px;
+  height: 50px;
 }
 
-.container .left span {
-  margin-right: 20px;
-  cursor: pointer;
-  
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+  padding-left: 30px;
+  padding-right: 30%;
 }
-.container .left span:hover {
-  color: #e50914;
+
+.tabs span {
+  cursor: pointer;
+}
+.tabs span:hover {
+  color: grey;
 }
 
 
@@ -44,6 +52,7 @@
 .right {
   display: flex;
   align-items: center;
+
 }
 
 .right .icon{
@@ -61,7 +70,6 @@
 
 .right .profile .options{
   display: none;
-  background-color: black;
   border-radius: 5px;
 }
 
