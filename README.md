@@ -17,9 +17,9 @@ Une reproduction du site Netflix, réalisée en React.js
 
 **Cloner ce dépôt de code :**
 
-bash
+*bash
 Copy code
-git clone https://github.com/RaagavanGIT/projetnetflix.git
+git clone https://github.com/RaagavanGIT/projetnetflix.git*
 
 
 **Installer les dépendances nécessaires :**
