@@ -33,7 +33,13 @@
 .container .left span {
   margin-right: 20px;
   cursor: pointer;
+  
 }
+.container .left span:hover {
+  color: #e50914;
+}
+
+
 
 .right {
   display: flex;
