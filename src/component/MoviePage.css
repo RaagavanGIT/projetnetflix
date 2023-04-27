@@ -1,6 +1,6 @@
 .movie-page {
     color: white;
-    background-color: #000000;
+    background-color: #141414;
     padding-top: 50px;
 }
 
@@ -26,7 +26,6 @@
 
 .movie-page_movie-title h1 {
     color: white;
-    background-color: black;
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
