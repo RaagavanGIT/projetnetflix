@@ -1,11 +1,12 @@
-* {
+.moviepage {
     color: white;
-    background-color: #141414;
 }
 
-img  {
+.moviepage img  {
     object-fit: contain;
     padding: 20px;
+    width: 100%;
+    height: auto;
 }
 
 .movie-title h1 {

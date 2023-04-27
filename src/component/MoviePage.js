@@ -28,6 +28,7 @@ function MoviePage(props) {
   return (
     <div>
       <Navbar />
+      <div className="moviepage">
       <div className="back">
       <Link to="/">Retour à la page d'accueil</Link>
       </div>
@@ -66,7 +67,7 @@ function MoviePage(props) {
       <div className="movie-overview">
           <p>{movie.overview}</p>
       </div>
-
+      </div>
     </div>
   );
 }
