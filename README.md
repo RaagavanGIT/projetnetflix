@@ -1,10 +1,10 @@
-Netflix Clone
+**Netflix Clone**
 
 Une reproduction du site Netflix, réalisée en React.js
 
 
 
-Table des matières
+**Table des matières**
 
 - Prérequis
 - Installation
@@ -15,22 +15,22 @@ Table des matières
 - Un navigateur web moderne
 - Installation
 
-loner ce dépôt de code :
+**Cloner ce dépôt de code :**
 
 bash
 Copy code
 git clone https://github.com/RaagavanGIT/projetnetflix.git
 
 
-Installer les dépendances nécessaires :
+**Installer les dépendances nécessaires :**
 
-bash
+*bash
 Copy code
 cd projetnetflix
-npm install
+npm install*
 
 
-Configuration de l'API
+**Configuration de l'API**
 
 
 1. Créer un compte sur The Movie Database (TMDb) si ce n'est pas déjà fait.
@@ -43,29 +43,33 @@ Configuration de l'API
 
 5. Ajouter la ligne suivante dans le fichier .env, en remplaçant "YOUR_API_KEY" par la clé API copiée :
 
-makefile
+*makefile
 Copy code
-REACT_APP_TMDB_API_KEY=YOUR_API_KEY
+REACT_APP_TMDB_API_KEY=YOUR_API_KEY*
 
 
-Lancement de l'application
+**Lancement de l'application**
 
 Lancer l'application en mode développement :
 
-bash
+*bash
 Copy code
-npm start
+npm start*
 
-Ouvrir votre navigateur web et accéder à l'URL suivante :
+Ouvrez votre navigateur web et accédez à l'URL suivante :
 
-arduino
+*arduino
 Copy code
-http://localhost:3000
+http://localhost:3000*
 
 Le site Netflix Clone doit maintenant être visible.
 
-À propos de ce projet
+**À propos de ce projet**
+
 Ce projet a été réalisé dans le cadre d'un apprentissage de React.js, il est destiné à des fins éducatives uniquement et n'a pas pour objectif d'être utilisé en production.
 
-Contributeurs
-Raagavan Krishnamoorthy (GitHub)
+**Contributeurs**
+
+@RaagavanGIT
+@Vidocq17
+@TheKyyn
