@@ -30,6 +30,9 @@ const Navbar = () => {
         <div className="right">
           <SearchIcon className="icon" />
           <NotificationsIcon className="icon" />
+          <div classnam="notifications">
+            <span></span>
+          </div>
           <img src={Avatar} />
           <div className="profile">
             <ArrowDropDownIcon className="icon"/>
