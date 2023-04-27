@@ -1,4 +1,5 @@
 import React from "react";
+import Connexion from "./component/Connexion";
 import Homepage from "./component/Homepage";
 import {Header} from "./component/Header";
 import MoviePage from "./component/MoviePage";
@@ -8,15 +9,8 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Header />
-              <Homepage />
-            </>
-          }
-        />
+        <Route path="/" element={<Connexion />} />
+        <Route path="/Homepage"element={<><Header /><Homepage /> </>}/>
         <Route path="/movie/:id" element={<MoviePage />} />
       </Routes>
     </div>

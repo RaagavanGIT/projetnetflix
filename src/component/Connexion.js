@@ -10,7 +10,7 @@ function Connexion() {
                 <h1>Qui est-ce ?</h1>
             </div>
             <div className="box">
-                <Link to ="/Homepage.js">
+                <Link to ="/Homepage">
                 < div className="profil">
                     <img src='src/component/cyrille-banovski.jpeg'alt="Cyrille Banovski"></img>
                     <h2>Cyrille</h2>
