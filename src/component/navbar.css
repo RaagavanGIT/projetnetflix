@@ -1,15 +1,18 @@
 .navbar {
   width: 100%;
   color: white;
+  font-size: 14px;
   position: fixed;
   top: 0;
   z-index: 999;
-  background-color: linear-gradient(to top, transparent 0%, rgb(0, 0, 0,3) 50%); 
-
+  background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0,3) 50%);
 }
 
+.scrolled{
+  background-color: black;
+}
 
-.navbar_container{
+.container{
   padding: 0px 50px;
   display: flex;
   align-items: center;
@@ -17,82 +20,38 @@
   height: 70px;
 }
 
-.navbar_container .navbar_left{
+.container .left{
   display: flex;
   align-items: center;
 }
 
-.navbar_container .navbar_left img{
+.container .left img{
   height: 25px;
   margin-right: 40px;
 }
 
-.navbar_nav-tabs {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-    width:100%;
-  padding-left: 30px;
-  padding-right: 30%;
-  font-size: 16px;
-}
-
-.navbar_nav-tabs span {
-  padding: 10px;
+.container .left span {
+  margin-right: 20px;
   cursor: pointer;
+  
+}
+.container .left span:hover {
+  color: #e50914;
 }
 
-.navbar_nav-tabs span:hover {
-  color: grey;  
-} 
 
-.navbar_nav-tabs a{
-  color: white;
-  text-decoration: none;
-}
-.navbar_nav-toggle, .navbar_nav-dropdown {
-  display: none;
-}
 
-/* @media only screen and (max-width: 1350px) {
-  .nav-tabs span:not(:last-child) {
-    display: none;
-  }
-
-  .nav-toggle {
-    display: block;
-    padding: 10px;
-  }
-
-  .nav-toggle:hover + .nav-dropdown {
-    display: block;
-    position: absolute;
-    z-index: 1;
-  }
-
-  .nav-dropdown span {
-    display: block;
-    padding: 10px;
-  }
-} */ 
-
-@media (max-width: 1350px) {
-  .navbar_nav-tabs span{
-    font-size: 8px;
-  }
-}
-
-.navbar_right {
+.right {
   display: flex;
   align-items: center;
 }
 
-.navbar_right .navbar_icon{
+.right .icon{
   margin: 0px 15px;
   cursor: pointer;
 }
 
-.navbar_right img{
+.right img{
   width: 30px;
   height: 30px;
   border-radius: 5px;
@@ -100,17 +59,18 @@
   cursor: pointer;
 }
 
-.navbar_right .navbar_profile .navbar_options{
+.right .profile .options{
   display: none;
+  background-color: black;
   border-radius: 5px;
 }
 
-.navbar_right .span{
+.right .span{
   padding: 10px;
   cursor: pointer;
 }
 
-.navbar_right .navbar_profile:hover .navbar_options{
+.right .profile:hover .options{
   display: flex;
   flex-direction: column;
   position: absolute;

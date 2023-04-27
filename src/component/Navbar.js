@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./navbar.css";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsIcon from "@mui/icons-material/Notifications";
@@ -15,38 +14,24 @@ const Navbar = () => {
     return () => (window.onscroll = null);
   }
   return (
-    <div className= "navbar">
-      <div className="navbar_container">
-        <div className="navbar_left">
-        <Link to="/Homepage"> <img src={Logo} alt="logo" /></Link>
-        </div>
-        <div class="navbar_nav-tabs">
-          <Link to="/Homepage"> <span>Accueil</span> </Link>
+    <div className={isScrolled ? "navbar scrolled" : "navbar"}>
+      <div className="container">
+        <div className="left">
+          <img src={Logo} alt="logo" />
+          <span>Accueil</span>
           <span>Séries</span>
           <span>Films</span>
           <span>Nouveautés les plus regardées</span>
           <span>Ma liste</span>
           <span>Explorer par langue</span>
-          <span class="navbar_nav-toggle">Parcourir</span>
-          <div class="navbar_nav-dropdown">
-            <span>Accueil</span>
-            <span>Séries</span>
-            <span>Films</span>
-            <span>Nouveautés les plus regardées</span>
-            <span>Ma liste</span>
-            <span>Explorer par langue</span>
-          </div>
         </div>
-        <div className="navbar_right">
-          <SearchIcon className="navbar_icon" />
-          <NotificationsIcon className="navbar_icon" />
-          <div classnam="navbar_notifications">
-            <span></span>
-          </div>
+        <div className="right">
+          <SearchIcon className="icon" />
+          <NotificationsIcon className="icon" />
           <img src={Avatar} />
-          <div className="navbar_profile">
-            <ArrowDropDownIcon className="navbar_icon"/>
-            <div className="navbar_options">
+          <div className="profile">
+            <ArrowDropDownIcon className="icon"/>
+            <div className="options">
               <span> Gérer les profils</span>
               <span>Transferer un profil</span>
               <span>Compte</span>
