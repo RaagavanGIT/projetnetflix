@@ -35,7 +35,7 @@ function MoviePage(props) {
         <h1>{movie.title}</h1>
       </div>
       <div>
-          <img
+          <img 
           src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`}
           alt={movie.title}
           />
@@ -44,8 +44,8 @@ function MoviePage(props) {
       <div className="launcher">
         <button className="lecture">Lecture</button>
         <button className="ba">Bande annonce</button>
-        <button className="add"><FontAwesomeIcon icon={faPlus} className="icon" /></button>
-        <button className="like"><FontAwesomeIcon icon={faThumbsUp} className="icon" /></button>
+        <button className="add"><FontAwesomeIcon icon={faPlus} className="icons" /></button>
+        <button className="like"><FontAwesomeIcon icon={faThumbsUp} className="icons" /></button>
       </div>
 
     <div className="movie-info_moviepage">
@@ -53,7 +53,7 @@ function MoviePage(props) {
           <p>Date de sortie : {movie.release_date}</p>
           <p>Langue : {movie.original_language}</p>
           <p>Durée : {movie.runtime} minutes</p>
-          <p>Note moyenne des spectateurs : {movie.vote_average} <FontAwesomeIcon icon={faThumbsUp} className="icon" /></p>
+          <p>Note moyenne des spectateurs : {movie.vote_average} <FontAwesomeIcon icon={faThumbsUp} className="icons" /></p>
           <p>Nombre de vues: {movie.popularity}<i class="fa-solid fa-thumbs-up"></i></p>
       </div>
     </div>

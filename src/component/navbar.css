@@ -5,7 +5,8 @@
   position: fixed;
   top: 0;
   z-index: 999;
-  background-color: transparent;  
+  background-color: linear-gradient(to top, transparent 0%, rgb(0, 0, 0,3) 50%); 
+
 }
 
 .scrolled{
@@ -17,17 +18,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: auto;
+  height: 70px;
 }
 
 .container .left{
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 
 .container .left img{
-  height: 50px;
+  height: 25px;
+  margin-right: 40px;
 }
 
 
@@ -52,7 +53,6 @@
 .right {
   display: flex;
   align-items: center;
-
 }
 
 .right .icon{
