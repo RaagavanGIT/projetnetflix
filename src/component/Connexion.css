@@ -1,4 +1,4 @@
-*{
+.Connexion-page {
     background-color: black;
     margin: 0;
     padding: 0;
@@ -17,53 +17,54 @@
     font-weight: bold;
 }
 
-.box {
+.connexion_box {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.profil {
+.connexion_profil {
     display: flex;
     flex-direction: column;
     margin: 40px;
 
 }
 
-.profil img {
+.connexion_profil img {
     width: 150px;
     height: 150px;
     border-radius: 5px;
     padding: 20px;
 }
 
-.profil h2{
+.connexion_profil h2{
     color: white;
     text-align: center;
     font-size: 20px;
     text-decoration: none;
 }
 
-.gestion {
+.connexion_gestion {
     position: fixed;
     bottom:10%;
     left: 45%;
+    background-color: red;
 }
 
-.gestion button {
+.connexion_gestion button {
     background-color: black;
     color: grey;
     border: grey solid 1px;
     padding: 10px;
 }
 
-.gestion button:hover {
+.connexion_gestion button:hover {
     color: white;
     border: white solid 1px;
     transition: 0,2s ease;
     background-color: black;
 }
 
-.gestion h3 {
+.connexion_gestion h3 {
     font-size: 15px;
 }

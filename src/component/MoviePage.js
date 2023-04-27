@@ -29,28 +29,27 @@ function MoviePage(props) {
     <div>
       <Navbar />
       <div className="movie-page">
-      <div className="back">
-      <Link to="/">Retour à la page d'accueil</Link>
+      <div className="movie-page_back">
       </div>
-      <div className="movie-title">
+      <div className="movie-page_movie-title">
         <h1>{movie.title}</h1>
       </div>
-      <div className="movie-backdrop">
+      <div className="movie-page_movie-backdrop">
           <img 
           src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`}
           alt={movie.title}
           />
       </div>
       
-      <div className="launcher">
-        <button className="lecture">Lecture</button>
-        <button className="ba">Bande annonce</button>
-        <button className="add"><FontAwesomeIcon icon={faPlus} className="icons" /></button>
-        <button className="like"><FontAwesomeIcon icon={faThumbsUp} className="icons" /></button>
+      <div className="movie-page_launcher">
+        <button className="movie-page_lecture">Lecture</button>
+        <button className="movie-page_ba">Bande annonce</button>
+        <button className="movie-page_add"><FontAwesomeIcon icon={faPlus} className="movie-page_icon" /></button>
+        <button className="movie-page_like"><FontAwesomeIcon icon={faThumbsUp} className="movie-page_icon" /></button>
       </div>
 
-    <div className="movie-info_moviepage">
-      <div className="movie-date">
+    <div className="movie-page_movie-info_moviepage">
+      <div className="movie-page_movie-date">
           <p>Date de sortie : {movie.release_date}</p>
           <p>Langue : {movie.original_language}</p>
           <p>Durée : {movie.runtime} minutes</p>
@@ -59,12 +58,12 @@ function MoviePage(props) {
       </div>
     </div>
 
-      <div className="movie-genre">
+      <div className="movie-page_movie-genre">
         <h3>Genre :   </h3>
         <p> {movie.genres.map((genre) => genre.name).join(", ")}</p>
       </div>
 
-      <div className="movie-overview">
+      <div className="movie-page_movie-overview">
           <p>{movie.overview}</p>
       </div>
       </div>

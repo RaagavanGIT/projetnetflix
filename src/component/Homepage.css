@@ -16,11 +16,11 @@
   margin: 0;
 }
 
-.movie_title_homepage {
+.homepage_movie_title_homepage {
   background-color: transparent;
 }
 
-.movie-info{
+.homepage_movie-info{
   position: absolute;
   top: 70%;
   left: 5%;
@@ -33,19 +33,19 @@
   justify-content: space-between;
 }
 
-.movie-info p {
+.homepage_movie-info p {
   height: 90px;
   margin-bottom: 30px;
   overflow: hidden;
   background-color: transparent;
 }
 
-.movie-info h1 {
+.homepage_movie-info h1 {
   background-color: transparent;
 }
 
 
-.button-container {
+.homepage_button-container {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -57,18 +57,18 @@
   background-color: transparent;
 }
 
-.play {
+.homepage_play {
   color: black;
   background-color: white;
 }
 
-.add_playlist {
+.homepage_add_playlist {
   color: white;
   background-color: #555555;
   opacity: 80%;
 }
 
-.play, .add_playlist {
+.homepage_play, .homepage_add_playlist {
   cursor: pointer;
   font-size: 25px;
   width: 250px;
@@ -77,7 +77,7 @@
 }
 
 @media (max-width: 1460px) {
-  .play, .add_playlist {
+  .homepage_play, .homepage_add_playlist {
     width: 200px;
     font-size: 16px;
     margin-right: 2%;
@@ -86,20 +86,20 @@
 }
 
 @media (max-width: 1000px) {
-  .play, .add_playlist {
+  .homepage_play, .homepage_add_playlist {
     width: 170px;
     font-size: 13px;
     margin-right: 2%;
     left: 0%;
   }
-  .button-container {
+  .homepage_button-container {
     flex-wrap: wrap;
     left: 2%;
   }
 }
 
 @media (max-width: 576px) {
-  .play, .add_playlist {
+  .homepage_play, .homepage_add_playlist {
     width: 80px;
     font-size: 5px;
     margin-right: 2%;
@@ -109,13 +109,13 @@
 
 /* FILMS */
 
-.categories-name h1 {
+.homepage_categories-name h1 {
   margin-left: 2rem;
   font-size: 1.5rem;
   padding: 50px;
   }
 
-.movies-grid {
+.homepage_movies-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 2rem;
@@ -123,11 +123,11 @@
   padding-right: 2rem;
 }
 
-.movie {
+.homepage_movie {
   position: relative;
 }
 
-.movie img {
+.homepage_movie img {
   display: block;
   width: 100%;
   height: auto;
@@ -137,7 +137,7 @@
   margin: 0;
 }
 
-.movie .overlay {
+.homepage_movie .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -151,23 +151,23 @@
   cursor: pointer;
 }
 
-.movie:hover .overlay {
+.homepage_movie:hover .overlay {
   opacity: 1;
 }
 
-.movie h2 {
+.homepage_movie h2 {
   font-weight: bold;
   font-size: 1rem;
 margin-top: 0.5rem;
 }
 
-.movie p {
+.homepage_movie p {
   font-size: 0.8rem;
   margin-top: 0.3rem;
   display: none;
 }
 
-.movie:hover p {
+.homepage_movie:hover p {
   display: block;
 }
 
@@ -186,7 +186,7 @@ button:hover {
   background-color: #f40612;
 }
 
-  .movie_info_homepage h2 {
+  .homepage_movie_info_homepage h2 {
     font-size: 20px;
     display: flex;
     align-items: center;

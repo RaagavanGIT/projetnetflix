@@ -3,13 +3,13 @@
     background-color: #000000;
 }
 
-.movie-backdrop{
+.movie-page_movie-backdrop{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.movie-backdrop{
+.movie-page_movie-backdrop{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +23,7 @@ img{
     max-width: 70%;
 }
 
-.movie-title h1 {
+.movie-page_movie-title h1 {
     color: white;
     background-color: #141414;
     padding: 10px;
@@ -35,20 +35,20 @@ img{
 }
 
 @media only screen and (max-width: 1000px) {
-    .movie-title h1 {
+    .movie-page_movie-title h1 {
     font-size: 28px;
     padding: 8px;
     }
     }
 
-.launcher{
+.movie-page_launcher{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
 }
 
-.lecture{
+.movie-page_lecture{
     background-color: white;
     color: black;
     border-radius: 5px;
@@ -56,7 +56,7 @@ img{
     margin-right: 1rem;
 }
 
-.ba{
+.movie-page_ba{
     background-color: black;
     padding: 10px;
     color: white;
@@ -65,7 +65,7 @@ img{
     margin-right: 1rem;
 }
 
-.add, .like {
+.movie-page_add, .movie-page_like {
     background-color: transparent;
     border-radius: 50%;
     color: white;
@@ -76,34 +76,34 @@ img{
 }
 
 @media (max-width: 1460px) {
-    .lecture, .ba {
+    .movie-page_lecture, .movie-page_ba {
       font-size: 16px;
       margin-right: 2%;
     }
   }
 
-.movie-info_moviepage{
+.movie-page_movie-info_moviepage{
     display: block;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 10px;
 }
 
-.movie-genre {
+.movie-page_movie-genre {
     display: flex;
     padding: 10px;
 }
 
-.movie-genre h3 {
+.movie-page_movie-genre h3 {
     font-size: 20px;
     margin-left: 1rem;
 }
 
-.movie-genre p {
+.movie-page_movie-genre p {
     margin-left: 5px;
 }
 
-.movie-date {
+.movie-page_movie-date {
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -111,7 +111,7 @@ align-items: center;
 margin: 0 1.5rem;
 }
 
-.movie-overview {
+.movie-page_movie-overview {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,19 +119,19 @@ margin: 0 1.5rem;
     padding: 10px;
   }
 
-.back {
+.movie-page_back {
   margin-left: 1rem;
   margin-top: 1rem;
 }
 
 
-.icons{
+.movie-page_icon{
     background-color: transparent;
 }
 
 
 @media only screen and (max-width: 1000px) {
-    .launcher, .movie-date, .movie-genre {
+    .movie-page_launcher, .movie-page_movie-date, .movie-page_movie-genre {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;

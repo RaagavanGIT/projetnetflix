@@ -5,6 +5,8 @@ import MoviePage from "./component/MoviePage";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./component/Navbar";
 
+
+
 function App() {
   return (
     <div className="App">
@@ -20,4 +22,4 @@ function App() {
 
 export default App;
 
-//
+// 

@@ -35,8 +35,8 @@ function Homepage() {
       alt={randomMovie.title}
     />
   )}
-  <div className='movie-info'>
-    <div className='movie_title_homepage'>
+  <div className='homepage_movie-info'>
+    <div className='homepage_movie_title_homepage'>
     {randomMovie && (
       <>
         <h1>{randomMovie.title}</h1>
@@ -45,23 +45,23 @@ function Homepage() {
     
     )}
     </div>
-    <div className='button-container'>
-      <button className='play'>Visionner</button>
-      <button className='add_playlist'><FontAwesomeIcon icon={faInfoCircle} style={{ background: 'transparent' }}/> Plus d'infos</button>
+    <div className='homepage_button-container'>
+      <button className='homepage_play'>Visionner</button>
+      <button className='homepage_add_playlist'><FontAwesomeIcon icon={faInfoCircle} style={{ background: 'transparent' }}/> Plus d'infos</button>
     </div>
   </div>
 </div>
-      <div className='categories-name'>
+      <div className='homepage_categories-name'>
         <h1>Films les plus récents :</h1>
       </div>
-      <div className="movies-grid">
+      <div className="homepage_movies-grid">
         {movies.map((movie) => (
-          <div key={movie.id} className="movie">
+          <div key={movie.id} className="homepage_movie">
             <Link to={`/movie/${movie.id}`}><img
               src={'https://image.tmdb.org/t/p/w500' + movie.poster_path}
               alt={movie.title}
             /></Link>
-            <div className="movie_info_homepage">
+            <div className="homepage_movie_info_homepage">
               <h2>{movie.title}</h2>
               <p>{movie.overview}</p>
             </div>
