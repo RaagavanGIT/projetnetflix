@@ -35,7 +35,7 @@ function MoviePage(props) {
       <div className="movie-title">
         <h1>{movie.title}</h1>
       </div>
-      <div>
+      <div className="movie-backdrop">
           <img 
           src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`}
           alt={movie.title}
@@ -68,7 +68,6 @@ function MoviePage(props) {
           <p>{movie.overview}</p>
       </div>
       </div>
-    </div>
     </div>
   );
 }

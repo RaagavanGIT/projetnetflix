@@ -3,9 +3,25 @@
     background-color: #000000;
 }
 
+.movie-backdrop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-backdrop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 img{
     object-fit: contain;
     padding: 20px;
+    width: 100%;
+    height: auto;
+    max-width: 70%;
+}
 
 .movie-title h1 {
     color: white;
