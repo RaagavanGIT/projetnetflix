@@ -8,10 +8,15 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 
 const Navbar = () => {
+  
   const[isScrolled, setIsScrolled] = useState(false);
   window.onscroll = () => {
     setIsScrolled(window.pageYOffset === 0 ? false : true)
     return () => (window.onscroll = null);
+
+   
+  
+
   }
   return (
     <div className={isScrolled ? "navbar scrolled" : "navbar"}>
@@ -26,7 +31,11 @@ const Navbar = () => {
           <span>Explorer par langue</span>
         </div>
         <div className="right">
-          <SearchIcon className="icon" />
+          <SearchIcon className="icon" > 
+
+
+          
+          </SearchIcon>
           <NotificationsIcon className="icon" />
           <img src={Avatar} />
           <div className="profile">
