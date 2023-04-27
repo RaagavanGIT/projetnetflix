@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+Projet Netflix
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet est un clone de l'interface utilisateur de Netflix, réalisé en utilisant React et l'API de The Movie Database.
 
-## Available Scripts
 
-In the project directory, you can run:
+Fonctionnalités
 
-### `npm start`
+Affichage des films et des séries les plus populaires à l'écran d'accueil
+Recherche de films et de séries par titre
+Page de détails pour chaque film ou série, avec informations sur le casting, la bande-annonce et les recommandations de films connexes
+Ajout de films et de séries à une liste personnelle
+Navigation entre les différentes pages de l'application
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Technologies utilisées
 
-### `npm test`
+React
+React Router
+CSS
+The Movie Database API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Clonez le repository sur votre ordinateur : git clone https://github.com/RaagavanGIT/projetnetflix.git
+- Ouvrez le terminal à la racine du projet et tapez : npm install pour installer les dépendances.
+- Pour lancer l'application en mode développement, tapez npm start.
+- Ouvrez votre navigateur et accédez à l'URL http://localhost:3000.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Configuration de l'API
 
-### `npm run eject`
+- L'application utilise l'API de The Movie Database pour récupérer les informations sur les films et les séries. Pour utiliser cette API, vous devez créer un compte gratuit sur le site de The Movie Database et générer une clé API. Ensuite, créez un fichier .env à la racine du projet et ajoutez la clé API comme suit :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+makefile
+Copy code
+REACT_APP_TMDB_API_KEY = votre_clé_api
+Contribuer
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Crédits
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ce projet a été réalisé par Raagavan, Maxime (TheKyyn) et Avidan. Les images et les informations sur les films et les séries sont fournies par The Movie Database.

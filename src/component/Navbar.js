@@ -18,16 +18,21 @@ const Navbar = () => {
       <div className="container">
         <div className="left">
           <img src={Logo} alt="logo" />
-          <span>Accueil</span>
-          <span>Séries</span>
-          <span>Films</span>
-          <span>Nouveautés les plus regardées</span>
-          <span>Ma liste</span>
-          <span>Explorer par langue</span>
         </div>
+        <div className="tabs">
+            <span>Accueil</span>
+            <span>Séries</span>
+            <span>Films</span>
+            <span>Nouveautés les plus regardées</span>
+            <span>Ma liste</span>
+            <span>Explorer par langue</span>
+          </div>
         <div className="right">
           <SearchIcon className="icon" />
           <NotificationsIcon className="icon" />
+          <div classnam="notifications">
+            <span></span>
+          </div>
           <img src={Avatar} />
           <div className="profile">
             <ArrowDropDownIcon className="icon"/>

@@ -6,7 +6,6 @@
 img{
     object-fit: contain;
     padding: 20px;
-}
 
 .movie-title h1 {
     color: white;
@@ -110,6 +109,9 @@ margin: 0 1.5rem;
 }
 
 
+.icons{
+    background-color: transparent;
+}
 
 
 @media only screen and (max-width: 1000px) {
