@@ -2,7 +2,7 @@ import react from 'react';
 import { Link } from 'react-router-dom';
 import './Connexion.css';
 import Avatar from "./image/avatar.png";
-import Avatar2 from "./image/avatar2.png";
+import Avatar2 from "./image/avatar2.jpeg";
 
 
 function Connexion() {
