@@ -56,6 +56,7 @@ const withMovieSlider = (genre) => {
                 <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
               </Link>
               <h3>{movie.title}</h3>
+              <h3 className="slider_overview">{movie.overview}</h3>
             </div>
           ))}
         </div>

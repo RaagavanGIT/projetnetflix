@@ -2,6 +2,7 @@ import React from "react";
 import Connexion from "./component/Connexion";
 import Homepage from "./component/Homepage";
 import MoviePage from "./component/MoviePage";
+import Footer from "./component/Footer";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./component/Navbar";
 
@@ -14,7 +15,6 @@ function App() {
         <Route path="/" element={<Connexion/>}/>
         <Route path="/Homepage"element={<><Navbar /><Homepage /></>}/>
         <Route path="/movie/:id" element={<MoviePage/> } > </Route>   
-
       </Routes>
     </div>
   );

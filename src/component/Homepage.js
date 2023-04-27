@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import "./Homepage.css";
 import Slider from './Slider'
+import Footer from './Footer'
 
 function Homepage() {
   const [movies, setMovies] = useState([]);
@@ -60,6 +61,7 @@ function Homepage() {
         </div>
       </div>
       <Slider></Slider>
+      <Footer></Footer>
     </div>
   );
 }

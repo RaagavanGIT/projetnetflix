@@ -43,11 +43,19 @@
     object-position: center;
   }
   
+  .movie-card:hover .slider_overview {
+    visibility: visible;
+  }
+
   .movie-card h3 {
     font-size: 16px;
     font-weight: 600;
     margin: 10px 0;
     text-align: center;
+  }
+
+  .slider_overview{
+    visibility: hidden;
   }
   
   .slider-button-left,
