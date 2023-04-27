@@ -5,16 +5,122 @@
 
 .homepage-banner_movie {
   position: relative;
+  display: flex;
 }
 
-.homepage-banner_movie{
+.homepage-banner_movie img {
+  width: 100%;
+  height: auto;
+  object-fit:fill;
+  padding: 0;
+  margin: 0;
 }
+
+.movie_title_homepage {
+  background-color: transparent;
+}
+
+.movie-info{
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  right: 5%;
+  z-index: 1;
+  color: white;
+  background-color: transparent;
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie-info p {
+  height: 90px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.movie-info h1 {
+  background-color: transparent;
+}
+
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  bottom: 0;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.play {
+  color: black;
+  background-color: white;
+}
+
+.add_playlist {
+  color: white;
+  background-color: #555555;
+  opacity: 80%;
+}
+
+.play, .add_playlist {
+  cursor: pointer;
+  font-size: 25px;
+  width: 250px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+@media (max-width: 1460px) {
+  .play, .add_playlist {
+    width: 200px;
+    font-size: 16px;
+    margin-right: 2%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .play, .add_playlist {
+    width: 170px;
+    font-size: 13px;
+    margin-right: 2%;
+    left: 0%;
+  }
+  .button-container {
+    flex-wrap: wrap;
+    left: 2%;
+  }
+}
+
+@media (max-width: 576px) {
+  .play, .add_playlist {
+    width: 80px;
+    font-size: 5px;
+    margin-right: 2%;
+  }
+}
+
+
+/* FILMS */
+
+.categories-name h1 {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  padding: 50px;
+  }
 
 .movies-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 2rem;
-  padding: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .movie {
@@ -27,14 +133,14 @@
   height: auto;
   object-fit: cover;
   border-radius: 0.2rem;
+  padding-top: 10px;
+  margin: 0;
 }
 
 .movie .overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,14 +156,14 @@
 }
 
 .movie h2 {
-  font-size: 1.2rem;
   font-weight: bold;
-  margin-top: 1rem;
+  font-size: 1rem;
+margin-top: 0.5rem;
 }
 
 .movie p {
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
   display: none;
 }
 
@@ -66,70 +172,25 @@
 }
 
 button {
-  background-color: #e50914;
-  color: #ffffff;
   border: none;
   border-radius: 0.2rem;
-  padding: 0.5rem 1rem;
   font-weight: bold;
   cursor: pointer;
-  margin-top: 1rem;
   transition: background-color 0.2s ease-in-out;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.6rem;
+  margin-top: 0.5rem;
 }
 
 button:hover {
   background-color: #f40612;
 }
 
-.button-container {
-  position: absolute;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  height: auto;
-  bottom: 30%;
-  left: 5%;
-  background-color: transparent;
-  font-size: 20px;
-}
-
-.play {
-  color: black;
-  background-color: white;
-  margin-right: 4%;
-}
-
-.add_playlist {
-  color: white;
-  background-color: #555555;
-  opacity: 80%;
-}
-
-.play, .add_playlist {
-  cursor: pointer;
-  font-size: 25px;
-  width: 250px;
-  border-radius: 5px;
-}
-
-@media (max-width: 768px) {
-  .play, .add_playlist {
-    width: 150px;
-    font-size: 10px;
-    margin-right: 2%;
-  }
-}
-
-@media (max-width: 576px) {
-  .play, .add_playlist {
-    width: 80px;
-    font-size: 5px;
-    margin-right: 2%;
-  }
-}
-
-
-
-.categories-name h1 {
-  margin-left: 1rem;
+  .movie_info_homepage h2 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
   }
