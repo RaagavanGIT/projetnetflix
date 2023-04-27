@@ -4,7 +4,6 @@ import './Connexion.css';
 import Avatar from "./image/avatar.png";
 import Avatar2 from "./image/avatar2.jpeg";
 
-
 function Connexion() {
     return (
         <div>
