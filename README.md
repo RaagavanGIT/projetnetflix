@@ -1,4 +1,6 @@
-**Netflix Clone**
+// FR //
+
+# **Netflix Clone**
 
 Une reproduction du site Netflix, réalisée en React.js
 
@@ -10,10 +12,12 @@ Une reproduction du site Netflix, réalisée en React.js
 - Installation
 - Configuration de l'API
 - Lancement de l'application
-- Prérequis
+
+**Prérequis**
 - Node.js (v10 ou supérieur)
 - Un navigateur web moderne
-- Installation
+
+**Installation**
 
 **Cloner ce dépôt de code :**
 
@@ -73,3 +77,62 @@ Ce projet a été réalisé dans le cadre d'un apprentissage de React.js, il est
 - @RaagavanGIT
 - @Vidocq17
 - @TheKyyn
+
+// EN //
+
+**Netflix Clone**
+
+A reproduction of the Netflix website, built with React.js.
+
+**Table of Contents
+
+- Prerequisites
+- Installation
+- API Configuration
+- Running the Application
+- Prerequisites
+- Node.js (v10 or later)
+- A modern web browser
+- Installation
+Clone this code repository:
+
+bash Copy code git clone https://github.com/RaagavanGIT/projetnetflix.git
+
+Install the necessary dependencies:
+
+bash Copy code cd projetnetflix npm install
+
+API Configuration
+
+Create an account on The Movie Database (TMDb) if you haven't already.
+
+Access the TMDb developer dashboard and create a new API key.
+
+Copy the newly created API key.
+
+Create a .env file at the root of the project.
+
+Add the following line to the .env file, replacing "YOUR_API_KEY" with the copied API key:
+
+makefile Copy code REACT_APP_TMDB_API_KEY=YOUR_API_KEY
+
+Running the Application
+
+Launch the application in development mode:
+
+bash Copy code npm start
+
+Open your web browser and navigate to the following URL:
+
+arduino Copy code http://localhost:3000
+
+The Netflix Clone site should now be visible.
+About This Project
+
+This project was created as part of a React.js learning experience, and is intended for educational purposes only and is not intended for production use.
+
+Contributors
+
+@RaagavanGIT
+@Vidocq17
+@TheKyyn
