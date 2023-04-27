@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./navbar.css";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsIcon from "@mui/icons-material/Notifications";
@@ -19,7 +20,15 @@ const Navbar = () => {
         <div className="left">
           <img src={Logo} alt="logo" />
         </div>
-        <div className="tabs">
+        <div class="nav-tabs">
+          <Link to="/Homepage"> <span>Accueil</span> </Link>
+          <span>Séries</span>
+          <span>Films</span>
+          <span>Nouveautés les plus regardées</span>
+          <span>Ma liste</span>
+          <span>Explorer par langue</span>
+          <span class="nav-toggle">Parcourir</span>
+          <div class="nav-dropdown">
             <span>Accueil</span>
             <span>Séries</span>
             <span>Films</span>
@@ -27,6 +36,7 @@ const Navbar = () => {
             <span>Ma liste</span>
             <span>Explorer par langue</span>
           </div>
+        </div>
         <div className="right">
           <SearchIcon className="icon" />
           <NotificationsIcon className="icon" />

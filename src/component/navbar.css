@@ -1,7 +1,6 @@
 .navbar {
   width: 100%;
   color: white;
-  font-size: 14px;
   position: fixed;
   top: 0;
   z-index: 999;
@@ -32,24 +31,61 @@
   margin-right: 40px;
 }
 
-
-.tabs {
+.nav-tabs {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  width:100%;
+  align-items: center;
+    width:100%;
   padding-left: 30px;
   padding-right: 30%;
+  font-size: 16px;
 }
 
-.tabs span {
+.nav-tabs span {
+  padding: 10px;
   cursor: pointer;
-}
-.tabs span:hover {
-  color: grey;
+  background-color: transparent;
 }
 
+.nav-tabs span:hover {
+  color: grey;  
+} 
 
+.nav-tabs a{
+  color: white;
+  text-decoration: none;
+}
+.nav-toggle, .nav-dropdown {
+  display: none;
+}
+
+/* @media only screen and (max-width: 1350px) {
+  .nav-tabs span:not(:last-child) {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+    padding: 10px;
+  }
+
+  .nav-toggle:hover + .nav-dropdown {
+    display: block;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .nav-dropdown span {
+    display: block;
+    padding: 10px;
+  }
+} */ 
+
+@media (max-width: 1350px) {
+  .nav-tabs span{
+    font-size: 8px;
+  }
+}
 
 .right {
   display: flex;
