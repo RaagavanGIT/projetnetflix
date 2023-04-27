@@ -50,19 +50,19 @@ REACT_APP_TMDB_API_KEY=YOUR_API_KEY*
 
 **Lancement de l'application**
 
-Lancer l'application en mode développement :
+- Lancer l'application en mode développement :
 
 *bash
 Copy code
 npm start*
 
-Ouvrez votre navigateur web et accédez à l'URL suivante :
+- Ouvrez votre navigateur web et accédez à l'URL suivante :
 
 *arduino
 Copy code
 http://localhost:3000*
 
-Le site Netflix Clone doit maintenant être visible.
+- Le site Netflix Clone doit maintenant être visible.
 
 **À propos de ce projet**
 
@@ -70,6 +70,6 @@ Ce projet a été réalisé dans le cadre d'un apprentissage de React.js, il est
 
 **Contributeurs**
 
-@RaagavanGIT
-@Vidocq17
-@TheKyyn
+- @RaagavanGIT
+- @Vidocq17
+- @TheKyyn
