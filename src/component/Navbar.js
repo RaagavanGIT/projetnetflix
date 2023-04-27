@@ -4,13 +4,8 @@ import SearchIcon from "@mui/icons-material/Search";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import Logo from "./image/Logo.svg";
 import Avatar from "./image/avatar.png";
-import Avatar2 from "./image/avatar2.jpeg";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import EditIcon from "@mui/icons-material/Edit";
-import PersonIcon from "@mui/icons-material/Person";
-import MoveDownIcon from "@mui/icons-material/MoveDown";
-import HelpIcon from "@mui/icons-material/Help";
-import Mario from "./image/mario.jpg";
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+
 
 const Navbar = () => {
   const[isScrolled, setIsScrolled] = useState(false);
@@ -37,7 +32,7 @@ const Navbar = () => {
           <div className="profile">
             <ArrowDropDownIcon className="icon"/>
             <div className="options">
-              <span>Gérer les profils</span>
+              <span> Gérer les profils</span>
               <span>Transferer un profil</span>
               <span>Compte</span>
               <span>Centre d'aide</span>

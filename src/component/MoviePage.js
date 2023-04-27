@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 import './MoviePage.css'
+import Navbar from "./Navbar";
 
 function MoviePage(props) {
   const { id } = useParams();
@@ -26,6 +27,7 @@ function MoviePage(props) {
 
   return (
     <div>
+      <Navbar />
       <div className="back">
       <Link to="/">Retour à la page d'accueil</Link>
       </div>
